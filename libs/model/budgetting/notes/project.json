@@ -1,0 +1,26 @@
+{
+  "name": "budget-notes",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/model/budgetting/notes/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/model/budgetting/notes",
+        "main": "libs/model/budgetting/notes/src/index.ts",
+        "tsConfig": "libs/model/budgetting/notes/tsconfig.lib.json",
+        "assets": ["libs/model/budgetting/notes/*.md"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/model/budgetting/notes/jest.config.ts"
+      }
+    }
+  },
+  "tags": ["domain:budgetting", "type:model"]
+}

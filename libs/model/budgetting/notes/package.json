@@ -1,0 +1,11 @@
+{
+  "name": "@kujali/model-budgetting-notes",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "main": "./src/index.ts",
+  "typings": "./src/index.ts",
+  "private": true,
+  "dependencies": {
+    "@ngfi/functions": "^1.0.0"
+  }
+}
